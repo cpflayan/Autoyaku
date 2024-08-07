@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 # 设定ChromeDriver路径
-service = Service('/path/to/chromedriver')
+service = Service('/usr/bin/chromedriver')
 
 # 初始化WebDriver
 driver = webdriver.Chrome(service=service)
