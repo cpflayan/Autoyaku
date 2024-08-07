@@ -4,12 +4,18 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
+from selenium.webdriver.chrome.options import Options
 
 # 设定ChromeDriver路径
 service = Service('/usr/bin/chromedriver')
 
-# 初始化WebDriver
-driver = webdriver.Chrome(service=service)
+
+# 设置 Chromium 浏览器路径
+chrome_options = Options()
+chrome_options.binary_location = '/usr/bin/chromium-browser'
+
+# 初始化 WebDriver
+driver = webdriver.Chrome(service=service, options=chrome_options)
 
 try:
     # 打开注册页面
