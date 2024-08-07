@@ -12,6 +12,11 @@ service = Service('/usr/bin/chromedriver')
 
 # 设置 Chromium 浏览器路径
 chrome_options = Options()
+chrome_options.add_argument('--headless')  # 启用无头模式
+chrome_options.add_argument('--no-sandbox')  # 解决一些环境问题
+chrome_options.add_argument('--disable-dev-shm-usage')  # 解决资源限制问题
+chrome_options.add_argument('--disable-gpu')  # 禁用 GPU，以提高稳定性
+chrome_options.add_argument('--remote-debugging-port=9222')  # 远程调试端口
 chrome_options.binary_location = '/usr/bin/chromium-browser'
 
 # 初始化 WebDriver
