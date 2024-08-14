@@ -1,1 +1,16 @@
-
+curl 'https://www.yakuza.bet/api/users' \
+  -H 'accept: application/vnd.softswiss.v1+json' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://www.yakuza.bet' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://www.yakuza.bet/entry?bar=modal&sign-up=modal' \
+  -H 'sec-ch-ua: "Chromium";v="128", "Not;A=Brand";v="24", "Google Chrome";v="128"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36' \
+  -H 'x-display-mode: browser' \
+  --data-raw '{"user":{"email":"nokidding@gmail.com","password":"12345678","password_confirmation":"12345678","country":"JP","receive_promos":true,"receive_sms_promos":true,"receive_promos_via_phone_calls":true,"agreed_to_partner_promotions":true,"currency":"BTC","terms_acceptance":true,"age_acceptance":true,"groups":[],"context":"registration"}}'
